@@ -36,6 +36,18 @@ server {
                proxy_set_header Connection "upgrade";
     }
 }
+server {
+    if ($host = your-domain.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80;
+        server_name your-domain.com;
+    return 404; # managed by Certbot
+
+
+}
 ```
 2. Change in  /var/www/vietnam/t_bot/config/main.py url ~~ vietnam.cryptayls.com ~~ => your-domain.com
 3. Change in /var/www/vietnam/vietnam/setings.py ALLOWED_HOSTS, CSRF_TRUSTED_ORIGINS
