@@ -27,8 +27,7 @@ def log_errors(f):
 def do_echo():
     @API.bot.message_handler(commands=['start', 'home'])
     def send_welcome(message):
-        pass
-        # API.bot.reply_to(message, "Howdy, how are you doing?")
+        API.bot.reply_to(message, "Howdy, how are you doing?")
         # u = Users.validate_user(message)
         # Menu.appMenu(message, u)
 
