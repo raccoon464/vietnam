@@ -11,14 +11,14 @@
 # Test
 ` 
   1. Install: `git clone git@github.com:raccoon464/vietnam.git`
-  2. Change config: /var/www/vietnam/t_bot/config/main.py
+  2. Change config: `/var/www/vietnam/t_bot/config/main.py`
   3. Start test: `/var/www/vietnam python3 manage.py bot`
   4. Try to send "/start" in your bot
 `
    
 # Work version
 1. Сonfigure nginx.conf (направляем домен на порт 8000)
-`   server {
+`server {
         server_name your-domain.com;
 
         location /
@@ -35,8 +35,8 @@
                proxy_set_header Upgrade $http_upgrade;
                proxy_set_header Connection "upgrade";
     }
-}`
-
+}
+`
 2. Change in  /var/www/vietnam/t_bot/config/main.py url ~~ vietnam.cryptayls.com ~~ => your-domain.com
 3. Change in /var/www/vietnam/vietnam/setings.py ALLOWED_HOSTS, CSRF_TRUSTED_ORIGINS
 4. Comand: `python3 manage.py runserver 0.0.0.0:8000`
