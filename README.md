@@ -1,5 +1,5 @@
-### vietnam bot
-# install modules
+### Vietnam bot
+# Install modules
 
   1. `sudo apt install python3.9`
   2. `python -m pip install Django`
