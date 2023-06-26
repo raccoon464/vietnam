@@ -1,5 +1,5 @@
-### Vietnam bot
-# Install modules
+# Vietnam bot
+### Install modules
 
   1. `sudo apt install python3.9`
   2. `python -m pip install Django`
@@ -8,15 +8,15 @@
 
 
 
-# Test
-` 
+### Test
+
   1. Install: `git clone git@github.com:raccoon464/vietnam.git`
   2. Change config: `/var/www/vietnam/t_bot/config/main.py`
   3. Start test: `/var/www/vietnam python3 manage.py bot`
   4. Try to send "/start" in your bot
-`
+
    
-# Work version
+### Work version
 1. Сonfigure nginx.conf (направляем домен на порт 8000)
 ```
 server {
