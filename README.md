@@ -1,18 +1,18 @@
 ### vietnam bot
 # install modules
-` 
-  1. sudo apt install python3.9
-  2. python -m pip install Django
-  3. pip install pyTelegramBotAPI
-  4. pip install vardump
-`
+
+  1. `sudo apt install python3.9`
+  2. `python -m pip install Django`
+  3. `pip install pyTelegramBotAPI`
+  4. `pip install vardump`
+
 
 
 # Test
 ` 
-  1. Install: git clone git@github.com:raccoon464/vietnam.git
+  1. Install: `git clone git@github.com:raccoon464/vietnam.git`
   2. Change config: /var/www/vietnam/t_bot/config/main.py
-  3. Start test: /var/www/vietnam python3 manage.py bot
+  3. Start test: `/var/www/vietnam python3 manage.py bot`
   4. Try to send "/start" in your bot
 `
    
